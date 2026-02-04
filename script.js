@@ -1,16 +1,9 @@
-function showScreen(number) {
-  const screens = document.querySelectorAll('.screen');
-
-  screens.forEach(screen => {
-    screen.classList.remove('active');
-  });
-
-  document.getElementById(`screen-${number}`)
-    .classList.add('active');
+function huir() {
+  const resultado = document.getElementById("resultado");
+  resultado.style.display = "block";
 }
 
-function toggleInfo() {
-  const info = document.getElementById('extra-info');
-
-  info.classList.toggle('hidden');
+function aceptar() {
+  document.getElementById("escena-1").classList.remove("activa");
+  document.getElementById("escena-2").classList.add("activa");
 }
