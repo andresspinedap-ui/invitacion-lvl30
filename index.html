@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LVL 30</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="gameboy">
+
+  <!-- ESCENA 1 -->
+  <div class="escena activa" id="escena-1">
+
+    <div class="mensaje">
+      <p>
+        Eres cordialmente invitado a celebrar<br>
+        mi llegada al <strong>LVL 30</strong><br>
+        de este juego llamado vida!!!
+      </p>
+    </div>
+
+    <div class="menu">
+      <button onclick="aceptar()">ACEPTAR</button>
+      <button onclick="huir()">HUIR</button>
+    </div>
+
+    <div class="resultado" id="resultado">
+      NO PUEDES ESCAPAR
+    </div>
+  </div>
+
+  <!-- ESCENA 2 -->
+  <div class="escena" id="escena-2">
+
+    <div class="mensaje">
+      <p>
+        EL EVENTO SERÁ A LA 1:00 PM<br>
+        EN "INGRESAR NOMBRE DEL LUGAR"<br><br>
+        ¡Juegos de mesa, chisme y pastel!
+      </p>
+    </div>
+
+    <a
+      href="https://www.google.com/maps?q=19.432608,-99.133209"
+      target="_blank"
+      class="mapa-link"
+    >
+      <img src="imagenes/mapa.png" class="mapa">
+    </a>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
