@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.gameboy {
+  width: 360px;
+  height: 640px;
+  background: url("imagenes/fondo.png") no-repeat;
+  background-size: cover;
+  background-position: left center; /* 👈 enfoca al mapache */
+  position: relative;
+  border: 6px solid black;
+}
+
+/* ESCENAS */
+.escena {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.escena.activa {
+  display: block;
+}
+
+/* UI SUPERIOR */
+.top-ui {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+}
+
+/* CUADRO DE TEXTO */
+.mensaje {
+  flex: 1;
+  background: white;
+  border: 4px solid black;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* MENÚ */
+.menu {
+  background: white;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu button {
+  background: white;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: black;
+  color: white;
+}
+
+/* MENSAJE HUIR */
+.resultado {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  right: 10px;
+  background: white;
+  border: 4px solid black;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
+/* MAPA */
+.mapa {
+  width: 120px;               /* 👈 más pequeño */
+  position: absolute;
+  bottom: 20px;               /* 👈 esquina inferior derecha */
+  right: 20px;
+  border: 4px solid black;
+  background: white;
+  cursor: pointer;
+}

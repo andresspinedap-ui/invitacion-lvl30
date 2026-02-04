@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LVL 30</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="gameboy">
+
+  <!-- ESCENA 1 -->
+  <div class="escena activa" id="escena-1">
+
+    <div class="top-ui">
+      <div class="mensaje">
+        <p>
+          Domingo 15 de febrero<br><br>
+          Eres cordialmente invitado a celebrar<br>
+          mi llegada al <strong>LVL 30</strong><br>
+          de este juego llamado vida!!!
+        </p>
+      </div>
+
+      <div class="menu">
+        <button onclick="aceptar()">ACEPTAR</button>
+        <button onclick="huir()">HUIR</button>
+      </div>
+    </div>
+
+    <div class="resultado" id="resultado">
+      NO PUEDES ESCAPAR
+    </div>
+
+  </div>
+
+  <!-- ESCENA 2 -->
+  <div class="escena" id="escena-2">
+
+    <div class="top-ui">
+      <div class="mensaje">
+        <p>
+          El evento será a la 1:00 PM<br>
+          en "Huellitas de Café"<br><br>
+          ¡Juegos de mesa, chisme y pastel!
+        </p>
+      </div>
+    </div>
+
+    <a
+      href="https://www.google.com/maps?sca_esv=b91b52423da4ab6e&rlz=1C1ONGR_esMX1158MX1158&output=search&q=huellitas+de+cafe&source=lnms&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaf9fS4tJ71bi2aHS-Pmeg0IA2nDWC3A9mnYKHxHonOwrj9iWEd2qhtK5hq7tRJECU53-zlKtbrEBo0_L03Nd0581SQ5WLDYH30FWB8uzqUZJWIYhTgckWzWh6unGTkeOVlSuG8ECYjCh2J538CwtNeHFJhlClUwHH3eosAOUnpNz16Dog&entry=mc&ved=1t:200715&ictx=111"
+      target="_blank"
+    >
+      <img src="imagenes/mapa.png" class="mapa">
+    </a>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
