@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitación LVL 30</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LVL 30</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- CONTENEDOR PRINCIPAL -->
-  <div class="invitation">
+<div class="gameboy">
 
-    <!-- PANTALLA 1 -->
-    <section class="screen active" id="screen-1">
-      <h1>🎮 Invitación LVL 30 🎉</h1>
-      <p>Prepárate para subir de nivel</p>
+  <!-- ESCENA 1 -->
+  <div class="escena activa" id="escena-1">
 
-      <button onclick="showScreen(2)">
-        Ver detalles
-      </button>
-    </section>
+    <div class="mensaje">
+      <p>
+        Eres cordialmente invitado a celebrar<br>
+        mi llegada al <strong>LVL 30</strong><br>
+        de este juego llamado vida!!!
+      </p>
+    </div>
 
-    <!-- PANTALLA 2 -->
-    <section class="screen" id="screen-2">
-      <h2>📅 Detalles del evento</h2>
+    <div class="menu">
+      <button onclick="aceptar()">ACEPTAR</button>
+      <button onclick="huir()">HUIR</button>
+    </div>
 
-      <p><strong>Fecha:</strong> 15 de marzo</p>
-      <p><strong>Hora:</strong> 6:00 PM</p>
-      <p><strong>Dress code:</strong> Casual gamer 😎</p>
+    <div class="resultado" id="resultado">
+      NO PUEDES ESCAPAR
+    </div>
+  </div>
 
-      <button onclick="toggleInfo()">
-        Mostrar sorpresa 🎁
-      </button>
+  <!-- ESCENA 2 -->
+  <div class="escena" id="escena-2">
 
-      <div id="extra-info" class="hidden">
-        <p>Habrá comida, bebidas y boss final 🕹️🔥</p>
-      </div>
+    <div class="mensaje">
+      <p>
+        EL EVENTO SERÁ A LA 1:00 PM<br>
+        EN "INGRESAR NOMBRE DEL LUGAR"<br><br>
+        ¡Juegos de mesa, chisme y pastel!
+      </p>
+    </div>
 
-      <button onclick="showScreen(3)">
-        Ver ubicación 📍
-      </button>
-    </section>
-
-    <!-- PANTALLA 3 -->
-    <section class="screen" id="screen-3">
-      <h2>📍 Ubicación</h2>
-      <p>Toca el mapa para abrir Google Maps</p>
-
-      <a
-        href="https://www.google.com/maps?q=19.432608,-99.133209"
-        target="_blank"
-      >
-        <img
-          src="imagenes/mapa.png"
-          alt="Ver ubicación"
-          class="mapa"
-        >
-      </a>
-
-      <button onclick="showScreen(1)">
-        Volver al inicio 🔄
-      </button>
-    </section>
+    <a
+      href="https://www.google.com/maps?q=19.432608,-99.133209"
+      target="_blank"
+      class="mapa-link"
+    >
+      <img src="imagenes/mapa.png" class="mapa">
+    </a>
 
   </div>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
