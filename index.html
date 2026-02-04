@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación LVL 30</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="invitation">
+
+    <!-- PANTALLA 1 -->
+    <section class="screen active" id="screen-1">
+      <h1>🎮 Invitación LVL 30 🎉</h1>
+      <p>Prepárate para subir de nivel</p>
+
+      <button onclick="showScreen(2)">
+        Ver detalles
+      </button>
+    </section>
+
+    <!-- PANTALLA 2 -->
+    <section class="screen" id="screen-2">
+      <h2>📅 Detalles del evento</h2>
+
+      <p><strong>Fecha:</strong> 15 de marzo</p>
+      <p><strong>Hora:</strong> 6:00 PM</p>
+      <p><strong>Dress code:</strong> Casual gamer 😎</p>
+
+      <button onclick="toggleInfo()">
+        Mostrar sorpresa 🎁
+      </button>
+
+      <div id="extra-info" class="hidden">
+        <p>Habrá comida, bebidas y boss final 🕹️🔥</p>
+      </div>
+
+      <button onclick="showScreen(3)">
+        Ver ubicación 📍
+      </button>
+    </section>
+
+    <!-- PANTALLA 3 -->
+    <section class="screen" id="screen-3">
+      <h2>📍 Ubicación</h2>
+      <p>Toca el mapa para abrir Google Maps</p>
+
+      <a
+        href="https://www.google.com/maps?q=19.432608,-99.133209"
+        target="_blank"
+      >
+        <img
+          src="imagenes/mapa.png"
+          alt="Ver ubicación"
+          class="mapa"
+        >
+      </a>
+
+      <button onclick="showScreen(1)">
+        Volver al inicio 🔄
+      </button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

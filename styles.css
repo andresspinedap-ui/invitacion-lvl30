@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+/* CONTENEDOR */
+.invitation {
+  min-height: 100vh;
+  background: url("imagenes/fondo.png") no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PANTALLAS */
+.screen {
+  display: none;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 320px;
+  width: 90%;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* BOTONES */
+button {
+  margin-top: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #ffcc00;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* INFO OCULTA */
+.hidden {
+  display: none;
+  margin-top: 12px;
+}
+
+/* MAPA */
+.mapa {
+  width: 100%;
+  max-width: 280px;
+  margin-top: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mapa:hover {
+  transform: scale(1.03);
+}
